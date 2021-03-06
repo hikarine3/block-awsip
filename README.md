@@ -3,9 +3,10 @@ This is showing how to get IP address list of AWS to block access from AWS DC to
 Result is arranged as "Deny from" format for apache, but you can edit as you want.
 
 AWS環境からのロボット的アクセスをブロックする為のIPリストです。
+外部からのクロールは、データ搾取に繋がるだけでなく、サーバ負荷の無駄な上昇・ネットワーク帯域コスト課金に繋がったりしてしまう為、ブロックした方が良い事が多いですが、このページはそれを手助けします。
 Apacheのconfigに定義出来るようにDeny fromを出力していますが、必要に応じてそこは調整して下さい。
 
-# How this was created
+# How you can get the latest AWS IP list for blocking
 以下のコマンドで最新のリストの取得が可能です。
 ```
 curl -s https://ip-ranges.amazonaws.com/ip-ranges.json |grep ip_prefix|perl -e 'while(<>){my $line=$_;$line=~ s!^\s*\"ip_prefix":\s*"!!;$line=~ s!",!!;print "Deny from ".$line;}'|sort|uniq
