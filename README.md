@@ -7,9 +7,9 @@ You can also get list with "Deny from $AWS_IP_Range" which will help you to set 
 
 このレポジトリではAWSのIPリストを得ることが出来ます。
 
-外部からのクロールは、データ搾取に繋がるだけでなく、サーバ負荷の無駄な上昇・ネットワーク帯域コスト課金に繋がったりしてしまう為、ブロックした方が良い事が多いです。
+外部からのクロールは、データ搾取に繋がるだけでなく、サーバ負荷の無駄な上昇・ネットワーク帯域コスト課金に繋がったりしてしまう為、AWSのIP一覧をうまく活用してAWSからの無駄なアクセスを遮断しましょう。
 
-Apacheのconfigに定義出来るようにDeny from付きのも提供しています。
+尚Apacheのconfigに定義出来るようにDeny from付きのも提供しています。
 
 # Location of latest AWS's IP list which is updated once a day / AWSのIP一覧が置いてある場所(1日1回更新)
 
