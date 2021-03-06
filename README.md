@@ -42,7 +42,7 @@ Hajime Kurita
 - EN: https://twitter.com/hajimekurita
 - JP: https://twitter.com/hikarine3
 
-## Techincoal web services / 提供してる技術関連Webサービス / Techincoal Web服务
+## Technical web services / 提供してる技術関連Webサービス / 技术网络服务
 ### VPS & Infra comparison / VPS比較 / VPS比较
 - EN: https://vpsranking.com/en/
 - CN: https://vpsranking.com/zh/
