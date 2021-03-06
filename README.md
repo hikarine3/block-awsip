@@ -1,9 +1,13 @@
 # Purpose of this document
 This is showing how to get IP address list of AWS to block access from AWS DC to steal data.
+
 Result is arranged as "Deny from" format for apache, but you can edit as you want.
 
+
 AWS環境からのロボット的アクセスをブロックする為のIPリストです。
+
 外部からのクロールは、データ搾取に繋がるだけでなく、サーバ負荷の無駄な上昇・ネットワーク帯域コスト課金に繋がったりしてしまう為、ブロックした方が良い事が多いですが、このページはそれを手助けします。
+
 Apacheのconfigに定義出来るようにDeny fromを出力していますが、必要に応じてそこは調整して下さい。
 
 # How you can get the latest AWS IP list for blocking
