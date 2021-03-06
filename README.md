@@ -1,4 +1,4 @@
-# Purpose of this repository 
+# Purpose of this repository / このレポジトリの目的
 You can get all IP list of AWS.
 
 The list will be updated once a day
